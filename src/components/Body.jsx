@@ -3,8 +3,10 @@ import SideBar from "./SideBar";
 
 const Body = () => {
   return (
-    <div className="flex">
-      <SideBar />
+    <div className="flex justify-start ">
+      <div>
+        <SideBar />
+      </div>
       <MainContainer />
     </div>
   );
