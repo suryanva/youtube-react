@@ -1,7 +1,17 @@
+import Body from "./components/Body";
+import Head from "./components/Head";
+
 const App = () => {
   return (
-    <div className="flex justify-center items-center">
-      <h1 className="font-bold">Hello Namastae React</h1>
+    <div>
+      <Head />
+      <Body />
+      {/*{
+      head
+      body
+        Sidebar
+            MenuItems
+        MainContainer}*/}
     </div>
   );
 };
