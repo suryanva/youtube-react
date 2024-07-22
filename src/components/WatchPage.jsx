@@ -1,5 +1,5 @@
 const WatchPage = () => {
-  return <div></div>;
+  return <div>Watch Page</div>;
 };
 
 export default WatchPage;

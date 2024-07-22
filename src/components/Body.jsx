@@ -1,4 +1,4 @@
-import MainContainer from "./MainContainer";
+import { Outlet } from "react-router-dom";
 import SideBar from "./SideBar";
 
 const Body = () => {
@@ -7,7 +7,7 @@ const Body = () => {
       <div>
         <SideBar />
       </div>
-      <MainContainer />
+      <Outlet />
     </div>
   );
 };
