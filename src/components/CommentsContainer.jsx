@@ -4,7 +4,7 @@ const Comment = ({ data }) => {
   const { author, avatar, content, replies } = data;
   return (
     <div>
-      <div className="flex shadow-sm bg-gray-100 rounded-md">
+      <div className="flex  shadow-sm bg-gray-100 rounded-md">
         <img className="w-12 h-12 p-2" src={avatar} alt="avatar" />
         <div className="px-3">
           <p className="font-bold">{author}</p>
@@ -13,7 +13,7 @@ const Comment = ({ data }) => {
       </div>
       <div>
         {replies && replies.length > 0 && (
-          <div className="ml-4 mt-2">
+          <div className="pl-5 border border-l-black">
             {replies.map((reply) => (
               <Comment key={reply.id} data={reply} />
             ))}
