@@ -36,6 +36,7 @@ Create a `.env` file in the root directory of your project. Add your YouTube API
 
 ```env
 VITE_YOUTUBE_API_KEY=your_youtube_api_key_here
+VITE_YOUTUBE_SEARCH_API=your_youtube_search_api
 ```
 
 Replace `your_youtube_api_key_here` with your actual API key from the [Google Developers Console](https://console.developers.google.com/).
