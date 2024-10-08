@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { useEffect, useState, useCallback } from "react";
-import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { cacheResults } from "../utils/searchSlice";
 
 const Head = () => {
@@ -17,7 +16,9 @@ const Head = () => {
     }
 
     try {
-      const response = await fetch(YOUTUBE_SEARCH_API + searchQuery);
+      const response = await fetch(
+        import.meta.env.VITE_YOUTUBE_SEARCH_API + searchQuery
+      );
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
