@@ -65,16 +65,12 @@ const Head = () => {
       <div className="flex space-x-8">
         <img
           className="h-8 cursor-pointer"
-          src="./public/hambuger.png"
+          src="/burger-bar.png"
           alt="hamburger"
           onClick={toggleMenuHandler}
         />
         <a href="/">
-          <img
-            className="h-8"
-            src="./public/youtube-icon.png"
-            alt="youtube-logo"
-          />
+          <img className="h-8" src="/youtube-icon.png" alt="youtube-logo" />
         </a>
       </div>
       <div className="relative flex w-1/4">
@@ -104,8 +100,8 @@ const Head = () => {
         )}
       </div>
       <div className="flex space-x-8">
-        <img className="h-8" src="./public/bell.png" alt="notification" />
-        <img className="h-8" src="./public/user.png" alt="user" />
+        <img className="h-8" src="/bell.png" alt="notification" />
+        <img className="h-8" src="/user.png" alt="user" />
       </div>
     </div>
   );
